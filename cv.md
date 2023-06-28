@@ -24,3 +24,19 @@ My name is Anton, and I'm that guy who always seeks new challenges and is ready 
 * JavaScript(basic)
 * Git/GitHub(basic)
 * Figma
+
+## Code Example
+
+```
+function checkSum(arr, k) {
+  let hash = {};
+  for (let i = 0; i < arr.length; i++) {
+    let diff = k - arr[i];
+    if (hash[diff]) {
+      return true;
+    }
+    hash[arr[i]] = true;
+  }
+  return false;
+}
+```
