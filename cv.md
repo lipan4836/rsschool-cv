@@ -40,3 +40,16 @@ function checkSum(arr, k) {
   return false;
 }
 ```
+
+## Education
+
+* Lipetsk State Pedagogical University named after P.P. Semenov-Tyan-Shansky
+  * Faculty of Information and Communication technologies
+* Self-education from open sources (mostly from Vladilen Minin, Yauhen Kavalchuk)
+* Result School
+  * 5 project on JS marathon
+
+## Languages
+* Russian
+* English (B1)
+* Japanese (beginer)
