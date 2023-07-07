@@ -4,8 +4,167 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>cv</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="container header-container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#summary" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#languages" class="nav-link">Languages</a>
+          </li>
+          <li class="nav-item">
+            <a href="#code" class="nav-link">Code Example</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts" class="nav-link">Contact info</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container profile-container">
+      <div class="profile">
+        <img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
+        <div class="section-about">
+          <h1>Anton Dmitriev</h1>
+          <h3>Junior Front-End Developer</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container main-content">
+    <section class="section summary" id="summary">
+      <div class="summary-wrap">
+        <h2>Summary</h2>
+        <p class="about-text">
+          My name is Anton, and I'm that guy who always seeks new challenges and is ready to learning something new. I'm 35 years old and have experience in sales and logistics, but I realized that I`m in search of myself still. I see myself in front-end development. I'm self-motivated and always willing to learn new technologies and development procedures.
+        </p>
+        <p>My strenghts:</p>
+        <ul class="about-list">
+          <li class="about-item">open for something new</li>
+          <li class="about-item">quick learning</li>
+          <li class="about-item">focusing on the task</li>
+          <li class="about-item">independence</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section skills" id="skills">
+      <div class="skills-wrap">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li class="skill-item skill-html">HTML</li>
+          <li class="skill-item skill-css">CSS</li>
+          <li class="skill-item skill-js">JavaScript (basic)</li>
+          <li class="skill-item skill-git">Git / GitHub (basic)</li>
+          <li class="skill-item skill-figma">Figma</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section education" id="education">
+      <div class="education-wrap">
+        <h2>Education</h2>
+        <ul class="education-list">
+          <li class="education-item"><a href="https://lspu-lipetsk.ru/" target="_blank" class="education-link">Lipetsk State Pedagogical University named after P.P. Semenov-Tyan-Shansky</a></li>
+          <li class="education-item">Self-education from open sources (mostly from Vladilen Minin, Yauhen Kavalchuk)</li>
+          <li class="education-item">Result School (<a href="https://result.school/products/marathon-js" target="_blank" class="education-link">5 project on JS marathon</a>)</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section languages" id="languages">
+      <div class="languages-wrap">
+        <h2>Languages</h2>
+      <ul class="language-list">
+        <li class="language-item ru-flag">Russian</li>
+        <li class="language-item en-flag">English (B1)</li>
+        <li class="language-item jp-flag">Japanese (beginer)</li>
+      </ul>
+      </div>
+    </section>
+    <section class="section code" id="code">
+      <div class="code-wrap">
+        <h2>Code Example</h2>
+        <div class="code-box">
+          <pre>
+            <code>
+              function checkSum(arr, k) {
+                let hash = {};
+                for (let i = 0; i &lt; arr.length; i++) {
+                  let diff = k - arr[i];
+                  if (hash[diff]) {
+                    return true;
+                  }
+                  hash[arr[i]] = true;
+                }
+                return false;
+              }
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <section class="section contacts" id="contacts">
+      <div class="contacts-wrap">
+        <h2>Contact info</h2>
+        <ul class="contact-list">
+          <li class="contact-item contact-loc">location: Russia, Voronezh</li>
+          <li class="contact-item contact-email">email: lipan48@gmail.com</li>
+          <li class="contact-item contact-tlgm">telegram: lipan48</li>
+          <li class="contact-item contact-git">git-hub: lipan4836</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section projects">
+      <div class="projects-wrap">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="chat-gpt">
+            <a href="https://github.com/lipan4836/GPT-Chat-Bot.git" target="_blank" class="project-link chatgpt-link">Chat GPT Telegram BOT</a>
+            <p class="chatgpt-text">Bot written in Node.JS, can recive text and audio messages. Audio messages convert to text.</p>
+            <ul class="mix-logo">
+              <li class="tlgm-logo"></li>
+              <li class="arrow-logo"></li>
+              <li class="chatgpt-logo"></li>
+            </ul>
+          </div>
+          <div class="codepen">
+            <a href="https://codepen.io/collection/xKjkjp?grid_type=grid&cursor=eyJjb2xsZWN0aW9uX2lkIjoieEtqa2pwIiwiY29sbGVjdGlvbl90b2tlbiI6bnVsbCwibGltaXQiOjQsIm1heF9pdGVtcyI6NSwib2Zmc2V0IjowLCJwYWdlIjoxLCJzb3J0X2J5IjoicG9zaXRpb24iLCJzb3J0X29yZGVyIjoiQXNjIn0=" target="_blank" class="project-link codepen-link">5 JS projects</a>
+            <ol>
+              <li class="js-project">Slides gallery</li>
+              <li class="js-project">Drag&amp;Drop app</li>
+              <li class="js-project">Vertical slide gallery</li>
+              <li class="js-project">Glow board app</li>
+              <li class="js-project">AIM training game</li>
+            </ol>
+            <ul class="codepen-logo-wrap">
+              <li class="codepen-logo"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="creator">
+        <span>2023</span>
+        <a href="https://github.com/lipan4836" target="_blank" class="github-profile">&copy; Anton Dmitriev (lipan4836)</a>
+      </div>
+      <a href="https://rs.school/js-stage0/" target="_blank" class="rss"></a>
+    </div>
+  </footer>
 </body>
 </html>
